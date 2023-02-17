@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'RocketLeague';
+    src: url('../fonts/Bourgeois-Bold.otf');
+}
+
+.banner {
+
+    /* width: 100%;
+    height: 100%; */
+    /* background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    background-color: #a94545;
+}
+
+.bottom-banner {
+
+    /* width: 100%;
+    height: 100%; */
+    /* background-size: cover; */
+    /* display: flex; */
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    background-color: #a94545;
+}
+
+.banner-text {
+    color: white;
+    font-size: 28px;
+    font-family: "RocketLeague", Arial, Helvetica, sans-serif;
+}
+
+.banner-team0   {
+    background-color: #a94545;
+}
+
+.app { 
+    color: black;
+    font-size: 28px;
+    font-family: "RocketLeague", Arial, Helvetica, sans-serif;
+}
+
+.team-wrapper {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.players-team0,
+.players-team1 {
+    position: absolute;
+    display: inline-block;
+    width: 18%;
+    top: 0;
+    left: 30px;
+}
+
+.players-team1 {
+    left: auto;
+    right: 30px;
+}
+
+.player {
+    padding-top: 20px;
+}
+
+.player-boost {
+    position: relative;
+    height: 35px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.player-boost .state-icon {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translateY(-50%);
+}
+
+.players-team1 .player-boost .state-icon {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 93%;
+    transform: translateY(-50%);
+}
+
+.player-boost .state-icon img {
+    position: absolute;
+    top: 50%;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(0) translateY(-50%);
+}
+
+.players-team1 .player-boost .state-icon img {
+    right: 100%;
+}
+
+.players-team1 .player-boost {
+    transform-origin: right;
+}
+
+.player-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 0 12px;
+}
+
+.player-info .name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-weight: bold;
+}
+
+.player-info .boost {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+
+.players-team1 .player-info .name {
+    left: auto;
+    right: 12px;
+}
+
+.players-team1 .player-info .boost {
+    right: auto;
+    left: 12px;
+}
+
+.boost-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transform-origin: left;
+}
+
+.boost-indicator.team1 {
+    transform-origin: right;
+}
+
+.boost-indicator.team0 {
+    background: linear-gradient(90deg, rgb(10, 2, 58) 0%, rgba(3,68,246,1) 100%);
+}
+
+.boost-indicator.team1 {
+    background: linear-gradient(270deg, rgb(104, 51, 2) 0%, rgba(252,127,43) 100%);
+}
+
+
+.score{
+    
+    color: white;
+}
+.team{
+    color: white;
+
+}
+
+.team-left-score{
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+}
+.team-right-score {
+    position: relative;
+    right: 200px;
+}
+
+.team-left-name {
+    position: absolute;
+    left: 30px;
+}
+.team-right-name {
+    position: absolute;
+    right: 30px;
+}
+
+.game-time {
+    position: relative;
+    font-weight: bold;
+}
+
+span::before {
+    animation: fadeIn 5s;
+    padding-left: 10px;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.hideP {
+    visibility: hidden;
+}
+
+.bottom-banner {
+
+    /* width: 100%;
+    height: 100%; */
+    /* background-size: cover; */
+    /* display: flex; */
+    bottom: 0px;
+    /* align-items: center;
+    justify-content: center; */
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-size: 100%;
+    background-image: url('../images/bottom-banner.png');
+}
+.spec-base {
+    color: white;
+    position: absolute;
+    top: 10px;
+   
+
+ 
+}
+
+
+.spectating-player{
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.spectating-score {
+    position: relative;
+    left: 100px;
+}
+.spectating-goals{
+    position: relative;
+    left: 200px;
+}
+.spectating-shots{
+    position: relative;
+        left: 300px;
+}
+.spectating-assists{
+    position: relative;
+        left: 400px;
+}
+.spectating-saves{
+    position: relative;
+        left: 500px;
+} */
+
+/** EVENTS **/
+.player-boost.is-sonic {
+    transform: scale(1.2);
+    outline: 2px solid rgb(240, 5, 5);
+}
+
+.player-boost.is-goal .state-icon img.goal,
+.player-boost.is-assist .state-icon img.assist,
+.player-boost.is-demo .state-icon img.demo {
+    transform: scale(1) translateY(-50%);
+}
